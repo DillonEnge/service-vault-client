@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  client:
+    build: .
+    restart: always
+    ports:
+      - '9011:9011'
+    env_file:
+      - .prod.env
